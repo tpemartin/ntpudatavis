@@ -3,7 +3,7 @@
 #' @param map A ggamp object
 #'
 #' @return a ggmap object with the bounding box in 3857
-#' @export none
+#' @export
 ggmap_bbox <- function(map) {
   if (!inherits(map, "ggmap")) stop("map must be a ggmap object")
   # Extract the bounding box (in lat/lon) from the ggmap to a numeric vector,
